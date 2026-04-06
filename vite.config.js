@@ -12,7 +12,6 @@ export default defineConfig({
     react()
   ],
   build: {
-    outDir: path.resolve(__dirname, '../static'),  // ✅ use path.resolve
     emptyOutDir: true,
   },
   server: {
