@@ -11,9 +11,12 @@ export default defineConfig({
     tailwindcss(),
     react()
   ],
-  build: {
-    emptyOutDir: true,
-  },
+
+ build: {
+  outDir: 'dist',        // This puts the files inside ATTN_React/dist
+  emptyOutDir: true,    // This cleans the folder before every new build
+},
+
   server: {
     port: 5173,
     open: true,
